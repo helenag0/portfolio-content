@@ -127,6 +127,8 @@ h1 {
     text-align: center;
     color: black;
     text-align: center;
+    margin-top: none;
+    margin-bottom: none;
 }
 
 main {
