@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/0454ad5445.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTC7R8NH76"></script>
   <script>
@@ -18,6 +22,7 @@
 	<title>Home</title>
 </head>
 <body>
+  <a class="skip-to-content-link" href="#main">Skip To Main Content</a>
     <header>
 		<nav role="navigation">
             <div id="menuToggle">
@@ -26,66 +31,77 @@
               <span></span>
               <span></span>
               <ul id="menu">
-                <li><a href=index.html>Home</a></li>
+                <li><a href=index.html class="visited">Home</a></li>
                 <li><a href=designers.html>Designers</a></li>
                 <li><a href=models.html><li>Models</a></li>
                 <li><a href=seasons.html><li>Seasons</a></li>
               </ul>
             </div>
           </nav>
-		<hr>
-		<h1>NEXT IN FASHION</h1>
-        <hr>
+    <div class="title_img_and_txt">
+      <hr>
+		  <h1>NEXT IN FASHION</h1>
+      <hr>
+    </div>
 	</header>
     <main>
-        <img class= mainpicture src = "images/runway-2.jpg" width="200px" alt="runway picture"/>
+      <div class="title_img_and_txt">
+        <img class="mainpicture" src = "images/runway-2.jpg" width="200px" alt="runway picture"/>
         <hr>
-        <h2 class=news-text>NEWS.</h2>
-        <img class=newspic src = "images/news-runway.jpeg" width="200px" alt="black and white runway"/>
-        <div class=news>
+      </div>
+      <div class="newstopcontent">
+        <h2 class="news-text">NEWS.</h2>
+        <img class="newspic" src = "images/news-runway.jpeg" width="200px" alt="black and white runway"/>
+      </div>
+        <div class="news">
+          <div class="gerardsection">
             <img id=gerard src="images/gerard-santos.jpeg" width="200px" alt="gerard santos work"/>
-            <br>
-            <p>
+            <p id="newsp1">
             If you look at a fashion image that makes you stop, the surrounding elements are just as thought out as the garment you're being sold. 
             When fashion extends beyond white and grey seamless backdrops, exquisitely detailed sets are the needed factor to elevate the dreamscape images of the top photographers in the world. 
             Set designer Gerard Santos has been behind some of fashion and music's most remarkable photos morphing historical references and fantasy into reality, with meticulous attention to detail. 
-            Santos looks back on his favorite projects, his non-linear start in the industry, and working with the biggest names in the business.</p>
-            <a href="https://models.com/oftheminute/?p=141271">READ STORY</a>
-            <br>
-            <br>
+            Santos looks back on his favorite projects, his non-linear start in the industry, and working with the biggest names in the business.
+            <a href="https://models.com/oftheminute/?p=141271">READ STORY</a></p>
+          </div>
+          <div class="valentesection">
             <img id=valente src = "images/valente.jpeg" width="200px" alt="barbara valente"/>
-            <p>Starting off as an exclusive for the Prada S/S 16 show, Brazilian model Barbara Valente was already on a stellar path towards success and securing monumental milestones in her career. 
+            <p id="newsp2">
+              Starting off as an exclusive for the Prada S/S 16 show, Brazilian model Barbara Valente was already on a stellar path towards success and securing monumental milestones in her career. 
             Modeling wasn't always in the cards for Valente, as she initially practiced martial arts with her father in her hometown in Salvador, Brazil, and was certain she would make a profession out of it, until, as she says, “modeling chose her.” 
             As a muse for Bottega Veneta and having over 10 campaigns with top clients like Mugler, Max Mara, and just recently Fendi, as well as working with renowned creatives like Tyrone Lebon and Haley Wollens, it's safe to say that the Top 50 model has earned her accolades. 
-            Models.com spoke to the Brazilian model about walking for Balenciaga's Fall '22 show, reinforcing kindness, and her goals going into the new year.</p>
-            <a href="https://models.com/oftheminute/?p=141065">READ STORY</a>
+            Models.com spoke to the Brazilian model about walking for Balenciaga's Fall '22 show, reinforcing kindness, and her goals going into the new year.
+            <a href="https://models.com/oftheminute/?p=141065">READ STORY</a></p>
+          </div>
         </div>
+      
         <hr>
-        <form action="https://formspree.io/f/xoqrllvl" method="POST">
-          <fieldset>
-            <legend>Contact</legend>
-        
-            <label for="name_id">Your Name</label>
-            <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
-        
-            <label for="email_id">Your Email</label>
-            <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
-        
-            <label for="msg">Leave A Message</label>
-            <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
-        
-            <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
-            <label for ="cBox">Remember me</label>
-        
-            <input type="submit" value = "Contact Me">
-          </fieldset>
-         </form>
+        <div class="mainpageform">
+          <form action="https://formspree.io/f/xoqrllvl" method="POST">
+            <fieldset>
+              <legend>Contact</legend>
+          
+              <label for="name_id">Your Name</label>
+              <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+          
+              <label for="email_id">Your Email</label>
+              <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+          
+              <label for="msg">Leave A Message</label>
+              <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+          
+              <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+              <label for ="cBox">Remember me</label>
+          
+              <input type="submit" value = "Contact Me">
+            </fieldset>
+          </form>
+        </div>
     </main>
 
 
     <footer> 
         <img src="images/favicon.png" alt="favicon">  
-        <p>Copyright 2021 © Next In Fashion by Helena Grobel. All rights reserved.</p>
+        <p>Copyright 2021 <i class="fab fa-creative-commons"></i> Next In Fashion by Helena Grobel. All rights reserved.</p>
     </footer>
 
 </body>

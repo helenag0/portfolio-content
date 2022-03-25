@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/0454ad5445.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTC7R8NH76"></script>
   <script>
@@ -18,6 +22,7 @@
 	<title>Models</title>
 </head>
 <body>
+  <a class="skip-to-content-link" href="#main">Skip To Main Content</a>
     <header>
 		<nav role="navigation">
             <div id="menuToggle">
@@ -28,7 +33,7 @@
               <ul id="menu">
                 <li><a href=index.html>Home</a></li>
                 <li><a href=designers.html>Designers</a></li>
-                <li><a href=models.html><li>Models</a></li>
+                <li><a href=models.html class="visited"><li>Models</a></li>
                 <li><a href=seasons.html><li>Seasons</a></li>
               </ul>
             </div>
@@ -38,40 +43,48 @@
         <hr>
         <h2 class=subtext>Models</h2>
 	</header>
-    <main>
+    <main id="models_main_content">
         <div class=model-top-container>
             <img class=model-top-images id= hoyeon-top src = "images/hoyeon-1.png" alt="hoyeon magazine cover"/>
             <img class=model-top-images id=adut-top src = "images/adut-3.jpg" alt="adut yellow dress"/>  
         </div>
         <img class=model-runway-banner src = "images/news-runway.jpeg" width="200px" alt="runway banner"/>
-        <p>
-        Adut Akech Bior, born 25 December 1999, is a South Sudanese-Australian model. 
-        Akech made her fashion week runway debut as an exclusive in the Saint Laurent S/S 17 show and went on to close both their F/W 17 and S/S 18 shows as an exclusive. 
-        In 2018, she was chosen as "Model of the Year" by models.com, an honor which was repeated the next year.
-        </p>
-        <p>Jung Ho-yeon (born June 23, 1994), also known as HoYeon Jung, is a South Korean model and actress. 
-        She began her career as a freelance model in 2010, walking in Seoul Fashion Week shows for two years. 
-        In 2013, she competed on the fourth season of Korea's Next Top Model and placed as a runner-up. 
-        In 2016, Jung signed with The Society Management and left South Korea to pursue a career overseas. 
-        She became known for her "fiery" red hair after making her international runway debut during New York Fashion Week. 
-        She was a Louis Vuitton exclusive in 2016, and became a global ambassador for the brand in 2021.</p>
+        
+        <h3>Adut Akech Bior</h3>
+        <div class="adut_container">
+          <p>
+          Adut Akech Bior, born 25 December 1999, is a South Sudanese-Australian model. 
+          Akech made her fashion week runway debut as an exclusive in the Saint Laurent S/S 17 show and went on to close both their F/W 17 and S/S 18 shows as an exclusive. 
+          In 2018, she was chosen as "Model of the Year" by models.com, an honor which was repeated the next year.
+          </p>
+          <img id="first_adut" src = "images/adut-1.jpg" width="200px" alt="adut red dress"/>
+          <img id="second_adut" src = "images/adut-2.jpg" width="200px" alt="adut black and white"/>
+        </div>
 
+        <h3>Jung Ho-yeon</h3>
+        <div class="jung_container">
+          <p>Jung Ho-yeon (born June 23, 1994), also known as HoYeon Jung, is a South Korean model and actress. 
+          She began her career as a freelance model in 2010, walking in Seoul Fashion Week shows for two years. 
+          In 2013, she competed on the fourth season of Korea's Next Top Model and placed as a runner-up. 
+          In 2016, Jung signed with The Society Management and left South Korea to pursue a career overseas. 
+          She became known for her "fiery" red hair after making her international runway debut during New York Fashion Week. 
+          She was a Louis Vuitton exclusive in 2016, and became a global ambassador for the brand in 2021.</p>
+          <img id="first_jung" src = "images/hoyeon-2.png" width="200px" alt="hoyeon harpers bazaar"/>
+          <img id="second_jung" src = "images/hoyeon-3.jpg" width="200px" alt="hoyeon w magazine"/>
+        </div>
         
-        <img src = "images/hoyeon-2.png" width="200px" alt="hoyeon harpers bazaar"/>
-        <img src = "images/hoyeon-3.jpg" width="200px" alt="hoyeon w magazine"/>
-        <img src = "images/adut-1.jpg" width="200px" alt="adut red dress"/>
-        <img src = "images/adut-2.jpg" width="200px" alt="adut black and white"/>
-        
-        <img src = "images/models.jpg" width="200px" alt="line of models"/>
-        <img src = "images/models-2.jpg" width="200px" alt="models on the beach"/>
-        <img src = "images/models-3.jpg" width="200px" alt="models in a studio"/>
+        <div class="bottom_images_models">
+          <img id="first_bottom" src = "images/models.jpg" width="200px" alt="line of models"/>
+          <img id="second_bottom" src = "images/models-2.jpg" width="200px" alt="models on the beach"/>
+          <img id="third_bottom" src = "images/models-3.jpg" width="200px" alt="models in a studio"/>
+        </div>
         <hr>
 
     </main>
 
     <footer> 
         <img src="images/favicon.png" alt="favicon"> 
-        <p>Copyright 2021 © Next In Fashion by Helena Grobel. All rights reserved.</p>
+        <p>Copyright 2021 <i class="fab fa-creative-commons"></i> Next In Fashion by Helena Grobel. All rights reserved.</p>
     </footer>
 
 </body>
