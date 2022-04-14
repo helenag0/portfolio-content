@@ -10,17 +10,6 @@
 }
 
 
-/* #menuToggle
-{
-  position: relative;
-  top: 10px;
-  user-select: none;
-  padding-bottom: 20px;
-}
-#menuToggle span, #menuToggle input[type='checkbox'] {
-  margin: auto;
-  width: 50%;
-} */
 
 #menuToggle a
 {
@@ -37,6 +26,7 @@
 #menuToggle a:hover
 {
   color: lightgray;
+  font-style: italic;
 }
 
 
@@ -104,12 +94,18 @@
 }
 
 
+
+
+
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 100%;
+  height: 75vw;
   margin: -100px 0 0 -50px;
   padding: 70px;
+  padding-left: 0px;
+  font-size: 40px;
   padding-top: 125px;
   
   background: #ededed;
@@ -126,7 +122,9 @@
 #menu li
 {
   padding: 10px 5px;
-  font-size: 22px;
+  font-size: 35px;
+  padding-left: 10px;
+  text-align: center;
 }
 
 #menuToggle input:checked ~ ul
@@ -484,6 +482,13 @@ a:hover {
   perspective: 500px;
 }
 
+.card:hover .content,
+.card:focus-within .content,
+.card:active .content,
+.card:focus .content {
+  transform: rotateY(180deg);
+}
+
 .content {
   position: absolute;
   width: 100%;
@@ -547,7 +552,11 @@ a:hover {
 
 .seasons_body {
   background-image: url("../images/newpaper_texture.jpg");
-  overflow-x: hidden;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .seasons p {
@@ -562,6 +571,16 @@ a:hover {
 
 /* tablet view */
 @media screen and (min-width:770px) {
+    #menu {
+      margin: -57px 0 0 -40px;
+      padding: 92px;
+      padding-left: 0px;
+      padding-top: 188px;
+      font-size: 70px;
+    }
+    #menu li {
+      font-size: 80px;
+    }
     form{
       width: 80%;
       margin: 0 auto;
@@ -617,6 +636,29 @@ a:hover {
 
 /* desktop view */
 @media screen and (min-width:900px) {
+  #menu {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    margin: -100px 0 0 -50px;
+    padding: 70px;
+    padding-top: 125px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  #menu li {
+    text-align: none;
+    padding: 10px 5px;
+    font-size: 22px;
+  }
   h1 {
     font-size: 160px;
   }
@@ -727,14 +769,6 @@ a:hover {
     grid-column: 3;
     grid-row: 1;
   }
-  /* #menuToggle {
-    display: block;
-    position: relative;
-    top: 10px;
-    left: 15px;
-    user-select: none;
-    padding-bottom: 20px;
-  } */
   .jsspan {
     opacity: 0;
     transition: all 1s ease;
@@ -842,6 +876,7 @@ i {
 @media (prefers-reduced-motion) {
   i {
     animation-name: none;
+    animation-duration: 0;
   }
   .jsspan {
     transform: none;
@@ -849,4 +884,34 @@ i {
   .jsspan.fade {
     transform: none;
   }
+  #menuToggle span {
+    transition: none;
+  }
+  #menuToggle input:checked ~ span, #menuToggle input:checked ~ span:nth-last-child(3), #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: none;
+  }
+  #menu {
+    transform: none;
+    transition: none;
+  }
+  .back {
+    transform: none;
+  }
+  .card:hover .content {
+    transform: none;
+    transition: none;
+  }
+  .content {
+    transition: none;
+    transform-style: none;
+  }
+  .card:hover .content,
+.card:focus-within .content,
+.card:active .content,
+.card:focus .content {
+  transform: none;
+}
+.seasons_body {
+  background-attachment: scroll;
+}
 }
